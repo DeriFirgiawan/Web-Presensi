@@ -1,0 +1,82 @@
+<%- include('./Layout/header.ejs'); %>
+
+<section id="register" class="register">
+  <div class="container">
+    <div class="jumbotron shadow">
+      <h3 class="title text-center">Daftar Pengajar</h3>
+      <hr>
+      <div class="form-register mt-4">
+        <form action="/pengajar/daftar" method="POST">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama Lengkap">
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="form-group">
+                <input type="text" class="form-control" id="username" name="username" placeholder="Username">
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="form-group">
+                <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="form-group">
+                <input type="text" class="form-control" id="nowa" name="nowa" placeholder="Nomor WhatsApp">
+              </div>
+            </div>
+
+            <div class="col-md">
+              <div class="form-group">
+                <input type="text" class="form-control" id="alamat" name="alamat" placeholder="Alamat">
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+          </div>
+
+          <div class="form-group">
+            <input type="password" class="form-control" id="password2" name="password2"
+              placeholder="Konfirmasi Password">
+          </div>
+
+          <div class="row">
+            <div class="col-md">
+              <div class="form-group">
+                <select class="custom-select mr-sm-2" id="classRoom" name="classRoom">
+                  <option selected>Jurusan</option>
+                  <% listKejuruan.forEach((jurusan) => { %> 
+                    <option id="classRoom" name="classRoom"><%= jurusan.jurusan %></option>
+                  <% }); %> 
+                </select>
+              </div>
+            </div>
+          </div>
+          <input type="submit" value="Daftar" class="btn btn-success btn-block">
+
+          <div class="register mt-3 text-center">
+            Daftar sebagai siswa?
+            <a href="/siswa/daftar">Saya siswa</a>
+            <br>
+            Sudah punya akun?
+            <a href="/">Masuk</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <section id="footer" class="footer">
+    <footer class="text-light">Copyrigh&copy; <span id="years">2020</span> Deri Firgiawan . All Rights Reserved
+    </footer>
+  </section>
+</section>
+
+<%- include('./Layout/footer.ejs'); %>

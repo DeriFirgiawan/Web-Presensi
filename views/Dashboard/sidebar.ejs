@@ -1,0 +1,48 @@
+<nav id="sidebar">
+  <div class="sidebar-header">
+    <h3>Absen Online</h3>
+    <strong>AO</strong>
+  </div>
+
+  <ul class="list-unstyled components">
+    <li>
+      <a href="/pengajar/dashboard/list-hadir" >
+        <i class="fas fa-home"></i>
+        Home
+      </a>
+    </li>
+    <li>
+      <a href="#listSiswa" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+        <i class="fas fa-users"></i>
+        List Siswa
+      </a>
+      <ul class="collapse list-unstyled" id="listSiswa">
+        <li>
+          <a href="/pengajar/dashboard/list-hadir">Siswa Hadir</a>
+        </li>
+        <li>
+          <a href="/pengajar/dashboard/list-izin">Siswa Izin</a>
+        </li>
+        <li>
+          <a href="/pengajar/dashboard/list-sakit">Siswa Sakit</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="/logout">
+        <i class="fas fa-sign-out-alt"></i>
+        Keluar
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<div id="content">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+
+      <button type="button" id="sidebarCollapse" class="btn btn-info">
+        <i class="fas fa-align-left"></i>
+      </button>
+    </div>
+  </nav>

@@ -1,0 +1,45 @@
+
+
+.user .container {
+  display: flex;
+  justify-content: space-around;
+}
+
+#user .user-profile .card {
+  border: none;
+  background-color: #ffffff;
+  background-image: linear-gradient(19deg, #ffffff 0%, #DDD6F3 100%);
+}
+
+#user .user-profile .card .image-profile {
+  width: 10rem;
+}
+
+#user .absensi {
+  width: 45rem;
+}
+
+#user .absensi .jumbotron {
+  background-color: #ffffff;
+  background-image: linear-gradient(19deg, #ffffff 0%, #DDD6F3 100%);
+}
+
+@media (max-width: 599px) {
+  #user .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #user .absensi {
+    width: auto;
+  }
+  .shape {
+    height: 60em !important;
+  }
+}
+
+@media (min-width: 768px) {
+  #user .container .absensi {
+    margin-left: 15px;
+  }
+}

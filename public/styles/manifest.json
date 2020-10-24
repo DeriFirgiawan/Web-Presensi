@@ -1,0 +1,14 @@
+{
+  "name": "Absen Online Serba Online",
+  "short_name": "Absen Online Ku",
+  "display": "standalone",
+  "background_color": "#00897B",
+  "theme_color": "#00897B",
+  "icons": [
+    {
+      "src": "../images/icon.png",
+      "sizes": "1300x1300",
+      "type": "image/png"
+    }
+  ]
+}

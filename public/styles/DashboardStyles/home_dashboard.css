@@ -1,0 +1,9 @@
+@media (max-width: 768px) {
+  .lessons {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .lessons .card {
+    margin-bottom: 15px;
+  }
+}

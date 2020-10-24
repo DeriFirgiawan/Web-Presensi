@@ -1,0 +1,25 @@
+
+  <div class="list-table mt-4">
+    <table class="table table-striped bg-light text-center">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Nama</th>
+          <th scope="col">Kelas</th>
+          <th scope="col">Tanggal</th>
+          <th scope="col">Status</th>
+        </tr>
+      </thead>
+      <% for(let i = 0; i < users.length; i++) { %> 
+        <tbody>
+          <tr>
+            <td><%= i + 1 %> </td>
+            <td><%= users[i].nama %> </td>
+            <td><%= users[i].kelas %> </td>
+            <td><%= users[i].date %> </td>
+            <td><%= users[i].stat %> </td>
+          </tr>
+        </tbody>
+      <% } %> 
+    </table>
+  </div>

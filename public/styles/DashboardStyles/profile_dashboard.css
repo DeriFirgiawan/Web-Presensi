@@ -1,0 +1,26 @@
+.user-profile {
+  display: flex;
+  justify-content: space-around;
+}
+
+.user-profile .jumbotron {
+  width: 45rem;
+  border-radius: 5px;
+}
+
+.user-profile .card {
+  height: 25em;
+}
+
+@media (max-width: 768px) {
+  .user-profile {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .user-profile .jumbotron {
+    margin: 25px;
+    width: 100%;
+  }
+}

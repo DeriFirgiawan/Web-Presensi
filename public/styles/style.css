@@ -1,0 +1,51 @@
+@import './login.css';
+@import './register.css';
+@import './notification.css';
+@import './index.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #007267 !important;
+  font-family: 'Kufam', cursive !important;
+}
+
+/* shape main */
+
+.shape {
+  position: relative;
+  padding: 3rem 15px;
+  padding-top: 3rem;
+  padding-right: 15px;
+  padding-bottom: 3rem;
+  padding-left: 15px;
+  background: linear-gradient(to right bottom, #00877a 50%, #00877a 50%);
+  background-image: linear-gradient(to right bottom, #00877a 50%, #007267 50%);
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  background-repeat-x: initial;
+  background-repeat-y: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: initial;
+}
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #009688;
+  text-align: center;
+}
+
+.navbar {
+  background-color: #009688;
+}

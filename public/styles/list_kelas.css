@@ -1,0 +1,24 @@
+#room-kelas .list-kelas .jumbotron {
+  background-color: #ffffff;
+  background-image: linear-gradient(19deg, #ffffff 0%, #DDD6F3 100%);
+  position: static;
+}
+
+#room-kelas .items .list-kelas {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+@media (max-width: 599px) {
+  #room-kelas .items .list-kelas {
+    justify-content: center;
+  }
+}
+
+/* @media (min-width: 755px) {
+  #room-kelas .items .list-kelas {
+    justify-content: center;
+  }
+} */

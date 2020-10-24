@@ -1,0 +1,59 @@
+<%- include('./Layout/header.ejs'); %>
+<section class="user" id="user">
+  <div class="container">
+    <section id="user-profile" class="user-profile mt-3">
+      <div class="card shadow text-center" style="width: 18rem;">
+        <div class="card-body">
+          <div class="profile-pic">
+            <img src="/images/profile.svg" alt="Profile" class="image-profile">
+          </div>
+
+          <div class="biodata mt-3">
+            <h5 class="card-title"><%= user.nama %> </h5>
+            <h6 class="card-subtitle mb-2 text-muted">SMK MERDERKA</h6>
+            <p class="card-text text-muted">
+              <span>
+                <%= user.email %> 
+              </span>
+              <span>
+                <%= user.alamat %> 
+              </span>
+              <span>
+                <%= user.nowa %> 
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="absensi" class="absensi mt-3">
+      <div class="jumbotron bg-light shadow">
+        <div class="container-fluid">
+          <h2 class="text-center my-2 text-muted"><%= users.classroom %> </h2>
+          <hr>
+          <p id="title-hari" class="text-dark text-uppercase"><%= dates %> <%= time %></p>
+          <div class="presensi mt-5">
+            <form action="/siswa/absen" method="POST">
+              <select class="custom-select" id="presensi" name="presensi">
+                <option selected>Presensi</option>
+                <option id="presensi" name="presensi">Hadir</option>
+                <option id="presensi" name="presensi">Izin</option>
+                <option id="presensi" name="presensi">Sakit</option>
+              </select>
+
+              <div class="submit-button mt-3">
+                <button type="submit" class="btn btn-outline-primary btn-block">Kirim</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <%- messages('message', locals) %>
+  <section id="footer" class="footer">
+    <footer class="text-light">Copyrigh&copy; <span id="years"></span> Deri Firgiawan . All Rights Reserved </footer>
+  </section>
+</section>
+<%- include('./Layout/footer.ejs'); %> 
